@@ -10,3 +10,15 @@ C:\Users\Dell\Desktop\c#\SumNote\SumNote\obj\Debug\SumNote.pdb
 C:\Users\Dell\Desktop\c#\SumNote\SumNote\obj\Debug\SumNote.SumNoteMain.resources
 C:\Users\Dell\Desktop\c#\SumNote\SumNote\obj\Debug\SumNote.SelectedNote.resources
 C:\Users\Dell\Desktop\c#\SumNote\SumNote\obj\Debug\SumNote.AddNewNote.resources
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.AddNewNote.resources
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.SumNoteMain.resources
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.SelectedNote.resources
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.csproj.GenerateResource.cache
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.exe
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.pdb
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\bin\Debug\SumNote.exe.config
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\bin\Debug\SumNote.exe
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\bin\Debug\SumNote.pdb
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\c#\SumNote-App\SumNote\SumNote\obj\Debug\SumNote.Properties.Resources.resources

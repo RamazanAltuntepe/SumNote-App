@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0256A5C-62A3-429A-A79B-2E8FD47CBAD7}</ProjectGuid>
+    <ProjectGuid>{685A7C2D-412F-4764-8F74-4254E4A7C817}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SumNote</RootNamespace>
-    <AssemblyName>SumNote</AssemblyName>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,45 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewNote.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddNewNote.Designer.cs">
-      <DependentUpon>AddNewNote.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Repository.cs" />
-    <Compile Include="SelectedNote.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SelectedNote.Designer.cs">
-      <DependentUpon>SelectedNote.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SumNoteUI.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
-      <DependentUpon>SumNoteUI.cs</DependentUpon>
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddNewNote.resx">
-      <DependentUpon>AddNewNote.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SelectedNote.resx">
-      <DependentUpon>SelectedNote.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SumNoteUI.resx">
-      <DependentUpon>SumNoteUI.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

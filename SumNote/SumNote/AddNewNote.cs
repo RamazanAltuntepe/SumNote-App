@@ -21,5 +21,20 @@ namespace SumNote
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbxHeader_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

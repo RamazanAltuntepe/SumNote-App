@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.OleDb;
 using System.Windows.Forms;
+using static SumNote.Repository;
 
 namespace SumNote
 {
@@ -62,13 +58,20 @@ namespace SumNote
             OpenChildForm(new SelectedNote());
         }
 
-        private void btnNewNote_Click(object sender, EventArgs e)
+        private void btnNew_Click(object sender, EventArgs e)
         {
             OpenChildForm(new AddNewNote());
         }
-        private void btnNewNote_MouseClick(object sender, MouseEventArgs e)
+
+        private void SumNoteMain_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new AddNewNote());
+            Repository repos = new Repository();
+            repos.ConnectData();
+            
+                
+                
+
+
         }
     }
 }

@@ -30,7 +30,7 @@ namespace SumNote
         private void InitializeComponent()
         {
             this.pnlSideMenu = new System.Windows.Forms.Panel();
-            this.btnNewNote = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -65,7 +65,7 @@ namespace SumNote
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlSideMenu.AutoScroll = true;
             this.pnlSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnlSideMenu.Controls.Add(this.btnNewNote);
+            this.pnlSideMenu.Controls.Add(this.btnNew);
             this.pnlSideMenu.Controls.Add(this.panel3);
             this.pnlSideMenu.Controls.Add(this.btnOther);
             this.pnlSideMenu.Controls.Add(this.panel2);
@@ -79,25 +79,16 @@ namespace SumNote
             this.pnlSideMenu.Size = new System.Drawing.Size(234, 686);
             this.pnlSideMenu.TabIndex = 0;
             // 
-            // btnNewNote
+            // btnNew
             // 
-            this.btnNewNote.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewNote.FlatAppearance.BorderSize = 0;
-            this.btnNewNote.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.btnNewNote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewNote.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewNote.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewNote.Location = new System.Drawing.Point(0, 630);
-            this.btnNewNote.Name = "btnNewNote";
-            this.btnNewNote.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.btnNewNote.Size = new System.Drawing.Size(234, 56);
-            this.btnNewNote.TabIndex = 7;
-            this.btnNewNote.Text = "New";
-            this.btnNewNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNewNote.UseVisualStyleBackColor = true;
-            this.btnNewNote.Click += new System.EventHandler(this.btnNewNote_Click);
-            this.btnNewNote.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnNewNote_MouseClick);
+            this.btnNew.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnNew.Location = new System.Drawing.Point(0, 663);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(234, 23);
+            this.btnNew.TabIndex = 7;
+            this.btnNew.Text = "Add New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // panel3
             // 
@@ -401,7 +392,9 @@ namespace SumNote
             this.Controls.Add(this.pnlSideMenu);
             this.MinimumSize = new System.Drawing.Size(600, 600);
             this.Name = "SumNoteMain";
+            this.Opacity = 0.5D;
             this.Text = "Sum Note";
+            this.Load += new System.EventHandler(this.SumNoteMain_Load);
             this.pnlSideMenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -436,7 +429,7 @@ namespace SumNote
         private System.Windows.Forms.Button btnLaterWeek;
         private System.Windows.Forms.Label lblWelcome2;
         private System.Windows.Forms.Label lblWelcome;
-        private System.Windows.Forms.Button btnNewNote;
+        private System.Windows.Forms.Button btnNew;
     }
 }
 
