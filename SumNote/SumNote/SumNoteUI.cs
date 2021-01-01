@@ -50,7 +50,7 @@ namespace SumNote
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-
+            OpenChildForm(new SelectedNote());
         }
 
         private void btnComing_Click(object sender, EventArgs e)
@@ -65,13 +65,13 @@ namespace SumNote
 
         private void SumNoteMain_Load(object sender, EventArgs e)
         {
-            Repository repos = new Repository();
-            repos.ConnectData();
-            
-                
-                
 
 
+        }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
+        {
+            OpenChildForm(new SelectedNote());
         }
     }
 }

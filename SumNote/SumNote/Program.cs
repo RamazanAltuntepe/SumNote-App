@@ -16,7 +16,10 @@ namespace SumNote
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
             Application.Run(new SumNoteMain());
+          
+            
         }
     }
 }

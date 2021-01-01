@@ -50,8 +50,8 @@ namespace SumNote
             this.lblWelcome2 = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.Calendar = new System.Windows.Forms.MonthCalendar();
-            this.pnlContent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlSideMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -359,17 +359,6 @@ namespace SumNote
             this.Calendar.TabIndex = 2;
             this.Calendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.DateSelect);
             // 
-            // pnlContent
-            // 
-            this.pnlContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlContent.BackColor = System.Drawing.Color.White;
-            this.pnlContent.Location = new System.Drawing.Point(234, 0);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(353, 846);
-            this.pnlContent.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -379,6 +368,19 @@ namespace SumNote
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(585, 15);
             this.panel1.TabIndex = 4;
+            // 
+            // pnlContent
+            // 
+            this.pnlContent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlContent.BackColor = System.Drawing.Color.White;
+            this.pnlContent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlContent.Location = new System.Drawing.Point(234, 0);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(353, 846);
+            this.pnlContent.TabIndex = 0;
+            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
             // 
             // SumNoteMain
             // 
@@ -409,7 +411,6 @@ namespace SumNote
 
         private System.Windows.Forms.Panel pnlSideMenu;
         private System.Windows.Forms.MonthCalendar Calendar;
-        private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnComing;
         private System.Windows.Forms.Panel pnlMenuHeader;
@@ -430,6 +431,7 @@ namespace SumNote
         private System.Windows.Forms.Label lblWelcome2;
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }
 

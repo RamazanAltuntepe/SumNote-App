@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace SumNote
 {
     partial class AddNewNote
@@ -30,7 +32,7 @@ namespace SumNote
         private void InitializeComponent()
         {
             this.tbxHeader = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.tbxText = new System.Windows.Forms.RichTextBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -48,18 +50,18 @@ namespace SumNote
             this.tbxHeader.Text = "Header type Here..";
             this.tbxHeader.TextChanged += new System.EventHandler(this.tbxHeader_TextChanged);
             // 
-            // richTextBox1
+            // tbxText
             // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 192);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(339, 253);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Your Text Type here..";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.tbxText.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxText.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbxText.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxText.Location = new System.Drawing.Point(0, 192);
+            this.tbxText.Name = "tbxText";
+            this.tbxText.Size = new System.Drawing.Size(339, 253);
+            this.tbxText.TabIndex = 1;
+            this.tbxText.Text = "Your Text Type here..";
+            this.tbxText.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // dateTimePicker
             // 
@@ -79,12 +81,14 @@ namespace SumNote
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(0, 528);
+            this.btnAdd.Location = new System.Drawing.Point(0, 640);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(339, 180);
+            this.btnAdd.Size = new System.Drawing.Size(339, 68);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnAdd_MouseClick);
             // 
             // AddNewNote
             // 
@@ -95,7 +99,7 @@ namespace SumNote
             this.ClientSize = new System.Drawing.Size(339, 708);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dateTimePicker);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.tbxText);
             this.Controls.Add(this.tbxHeader);
             this.Name = "AddNewNote";
             this.ShowIcon = false;
@@ -107,10 +111,9 @@ namespace SumNote
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox tbxHeader;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Button btnAdd;
+        private RichTextBox tbxHeader;
+        private RichTextBox tbxText;
     }
 }
